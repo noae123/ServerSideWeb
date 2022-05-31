@@ -8,6 +8,7 @@
     --font2: 'Ruluko', sans-serif;
     --font3: 'Martel Sans', sans-serif;
     --bStyle: 2px solid #D9B1A3;
+    --padding_aside: 12.7vw;
 }
 
 body{
@@ -103,7 +104,7 @@ figure img{
 .contactUsPhrase{
     padding-top: 4vh;
     grid-area: contactUsPhrase;
-    margin-right: 12.7vw;
+    margin-right: var(--padding_aside);
 }
 
 h1{
@@ -118,6 +119,23 @@ h2{
     font-family: var(--font2);
     font-size: 24px;
     cursor: default;
+}
+
+h3{
+    margin: 2vh 0 0 0 ;
+    font-family: var(--font2);
+    font-size: 20px;
+    cursor: default;
+}
+
+.card{
+    display: inline-block;
+    margin: 4vh 2vw 0 0;
+    width: 220px;
+    height: calc(1.4 * 220px);
+    border-radius: 15px;
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
+    outline: 2px solid rgba(255, 255, 255, 0.7);
 }
 
 nav a{
@@ -204,8 +222,15 @@ a *{
 
 .grid-container{
     display: grid;
-    padding-left: 12.7vw;
+    padding-left: var(--padding_aside);
     padding-top: 3.33vh;
+}
+
+main{
+    margin-top: 4vh ;
+    margin-bottom: 4vh ;
+    margin-right: var(--padding_aside);
+    grid-area: mainA;
 }
 
 .home-grid{
@@ -219,6 +244,12 @@ a *{
     grid-template-areas: 'header nav'
     'contactUsPhrase contactUsPhrase'
     'formArticle formArticle';
+}
+
+.profile-grid{
+    grid-template-columns: 40% auto;
+    grid-template-areas: 'header nav'
+    'mainA mainA';
 }
 
 .hamburg{
@@ -259,7 +290,7 @@ a *{
 
 .inner-form-grid{
     display: grid;
-    margin-right: 12.7vw;
+    margin-right: var(--padding_aside);
     grid-template-columns: 47.5% auto;
     row-gap: 2vh;
     column-gap: 5vw;
@@ -280,6 +311,13 @@ a *{
         display: inline-block;
         width: 22px;
         height: 22px;
+    }
+
+    .profile-grid{
+        grid-template-columns: 9.5% auto;
+        column-gap: 3vw;
+        grid-template-areas: 'nav header'
+        'mainA mainA';
     }
 
     .home-grid {
@@ -314,7 +352,7 @@ a *{
 
     aside {
         padding-top: 4vh;
-        margin-right: 12.7vw;
+        margin-right: var(--padding_aside);
         text-align: center;
     }
 
@@ -373,7 +411,7 @@ a *{
 
     .inner-form-grid {
         display: grid;
-        margin-right: 12.7vw;
+        margin-right: var(--padding_aside);
         grid-template-columns: 100%;
         row-gap: 3vh;
         grid-template-areas: 'input1'
@@ -390,5 +428,9 @@ a *{
         font-size: 16px;
         height: 10vh;
         border-radius: 60px;
+    }
+
+    main{
+        text-align: center;
     }
 }

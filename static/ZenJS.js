@@ -4,7 +4,7 @@ window.onresize = reportWindowSize;
 
 window.onload = function() {
     firstwidth =  window.innerWidth;
-    let aID = document.title.replaceAll(' ', '_')
+    let aID = document.title.replaceAll(' ', '_');
     document.getElementById(aID).classList.add("chosen");
 };
 
