@@ -1,0 +1,68 @@
+{% extends 'components/basic_web.html' %}
+
+{% block title %}
+    <title>Register</title>
+{% endblock %}
+
+{% block body_tag %}
+<body class="grid-container form-grid">
+{% endblock %}
+
+{% block main_part %}
+<article class="contactUsPhrase">
+    {{super()}}
+</article>
+<article class="formArticle">
+    <form action="/assignment3_2" role="search" method="GET" class="searchForm">
+        <label for="search">Search users: </label>
+        <input class="formInput" id="search" type="search" name="search" placeholder="Search..." autofocus />
+        <button type="submit" class="searcbtn">GO</button>
+    </form><br>
+    {% for cultist in range(searc_dict|length) %}
+        <div class="glass card">
+            <h1>{{ searc_dict[cultist]['fname'][0]|upper}}{{ searc_dict[cultist]['fname'][1:]|lower}} {{ searc_dict[cultist]['lname'][0]|upper}}{{ searc_dict[cultist]['lname'][1:]|lower}}</h1>
+            <h2>{{ searc_dict[cultist]['email'] }}</h2>
+        </div>
+    {% endfor %}
+    {% if not first_name %}
+        <form action="/assignment3_2" method="POST" class="inner-form-grid">
+            <div id="input1">
+                <label for="fname">First name</label><br>
+                <input type="text" id="fname" name="fname" class="formInput" required>
+            </div>
+            <div id="input2">
+                <label for="lname">Last name</label><br>
+                <input type="text" id="lname" name="lname" class="formInput" required>
+            </div>
+            <div id="input3">
+                <label for="phone">Phone Number</label><br>
+                <input type="tel" id="phone" name="phone" class="formInput">
+            </div>
+            <div id="input4">
+                <label for="birth">Birth Date</label><br>
+                <input type="date" id="birth" name="birth" class="formInput">
+            </div>
+            <div id="input5">
+                <label for="email" >Email Address</label><br>
+                <input required type="email" id="email" name="email" class="formInput">
+            </div>
+            <div id="input6">
+                        <label for="cr_no" >Card Number</label><br>
+            <input required type="text" class="formInput" name="card-num" placeholder="0000 0000 0000 0000" id="cr_no" minlength="19" maxlength="19"><br>
+            <label for="exp" >Expiry date</label><br>
+            <input required type="text" class="formInput" name="exp" placeholder="MM/YY" size="6" id="exp" minlength="5" maxlength="5"><br>
+            <label for="cvv" >CVV/CVC</label><br>
+            <input required type="password" class="formInput" name="cvv" id="cvv" placeholder="000" size="1" minlength="3" maxlength="3"><br>
+            </div>
+            <input id="input8" type="submit" value="Register" class="submitButton">
+        </form>
+    {% endif %}
+    {% if first_name %}
+        <a href="/log_out">
+            <button class="submitButton">Logout</button>
+        </a>
+    {% endif %}
+</article>
+{% endblock %}
+
+

@@ -1,23 +1,25 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <title>Home</title>
-    {% include 'components/links.html' %}
-</head>
+{% extends 'components/basic_web.html' %}
+
+{% block title %}
+<title>Home</title>
+{% endblock %}
+
+{% block body_tag %}
 <body class="no_y grid-container home-grid">
-        {% include 'components/nav_head.html' %}
-        <aside>
-            <span>We make<br> your inner <br>owl </span>
-            <span class="pinkWord"> shine!</span>
-            <br>
-            <a href="contact.html">
-                <button>
-                    <span>Connect Us</span>
-                </button>
-            </a>
-        </aside>
-        <figure >
-            <img src="../static/owly.png" alt="owl"/>
-        </figure>
-</body>
-</html>
+{% endblock %}
+
+{% block main_part %}
+<aside>
+    <span>We make<br> your inner <br>owl </span>
+    <span class="pinkWord"> shine!</span>
+    <br>
+    <a href="contact">
+        <button>
+            <span>Connect Us</span>
+        </button>
+    </a>
+</aside>
+<figure >
+    <img src="../static/owly.png" alt="owl"/>
+</figure>
+{% endblock %}

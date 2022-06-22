@@ -9,6 +9,12 @@
     --font3: 'Martel Sans', sans-serif;
     --bStyle: 2px solid #D9B1A3;
     --padding_aside: 12.7vw;
+
+    --rad: 10px;
+    --dur: .3s;
+    --height: 5rem;
+    --btn-width: 5rem;
+    --bez: cubic-bezier(0, 0, 0.43, 1.49);
 }
 
 body{
@@ -30,6 +36,10 @@ header{
 .logo{
     width: 24px;
     height: 24px;
+}
+
+.searchForm{
+    margin-right:12.7vw;
 }
 
 .logoText{
@@ -101,6 +111,11 @@ figure img{
     width: 46vw;
 }
 
+.register img{
+    float: right;
+    width:88%;
+}
+
 .contactUsPhrase{
     padding-top: 4vh;
     grid-area: contactUsPhrase;
@@ -138,6 +153,28 @@ h3{
     outline: 2px solid rgba(255, 255, 255, 0.7);
 }
 
+.glass{
+    width: 68.6vw;
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
+    outline: 2px solid rgba(255, 255, 255, 0.7);
+    height: 4em;
+    backdrop-filter: blur(2px);
+    padding: 4vh;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    border-radius: 15px;
+    margin-bottom: 2em;
+    margin-top: 0;
+}
+
+.glass h1{
+    font-size: 1.4em;
+}
+
+.glass h2{
+    font-size: 1.2em;
+}
+
 nav a{
     margin: 0 2vw 0 0;
     font-family: var(--font1);
@@ -164,17 +201,18 @@ form div{
 }
 
 input{
-    height: 32px;
+    height: 40px;
 }
 
 .formInput{
     display: block;
     border: var(--bStyle);
     font-size: 16px;
-    border-radius: 10px;
+    border-radius:  var(--rad);
     background-color: var(--innerInput);
     box-sizing: border-box;
     width: 100%;
+    padding-left: 14px;
 }
 
 textarea{
@@ -234,6 +272,12 @@ main{
 }
 
 .home-grid{
+    grid-template-columns: 40% auto;
+    grid-template-areas: 'header nav'
+    'aside figure';
+}
+
+.register-grid{
     grid-template-columns: 40% auto;
     grid-template-areas: 'header nav'
     'aside figure';
@@ -306,6 +350,37 @@ main{
     color: var(--choosenTxt);
 }
 
+#subRegister{
+    width: 100%;
+}
+
+/*search format*/
+input[type="search"] {
+  transition: all var(--dur) var(--bez);
+  transition-property: width, border-radius;
+  z-index: 1;
+  position: relative;
+  border-radius: var(--rad) 0 0 var(--rad);
+  border-right:none;
+  width: calc(100% - var(--btn-width));
+}
+
+.searcbtn {
+  margin-top: 30px;
+  height:40px;
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: var(--btn-width);
+  font-weight: bold;
+  font-size: 20px;
+  font-family: var(--font1);
+  color:white;
+  background: var(--pink);
+  border-radius: 0 var(--rad) var(--rad) 0;
+}
+
 @media only screen and (max-width: 768px) {
     .hamburg {
         display: inline-block;
@@ -326,6 +401,17 @@ main{
         grid-template-areas: 'nav header'
         'aside aside'
         'figure figure';
+    }
+
+    .register-grid{
+        grid-template-columns: 9.5% auto;
+        column-gap: 3vw;
+        grid-template-areas: 'nav header'
+        'aside aside';
+    }
+
+    .register-grid figure{
+    display:none;
     }
 
     figure{
@@ -433,4 +519,11 @@ main{
     main{
         text-align: center;
     }
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
 }
