@@ -1,18 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4634c323-a4b8-4653-bbae-63cf1ef3b086" name="Changes" comment="adding pictures and most of seconed assigment">
-      <change afterPath="$PROJECT_DIR$/templates/assignment3_2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/components/basic_web.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/שב 3.docx" afterDir="false" />
+    <list default="true" id="4634c323-a4b8-4653-bbae-63cf1ef3b086" name="Changes" comment="finishing programing all">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ZenJS.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/ZenJS.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/static/styleZen.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/styleZen.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/assignment3_1.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/assignment3_1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/components/nav_head.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/components/nav_head.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/contact.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/שב 3.docx" beforeDir="false" afterPath="$PROJECT_DIR$/שב 3.docx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,6 +33,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
     "WebServerToolWindowFactoryState": "false"
   }
 }]]></component>
@@ -49,7 +44,7 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.main">
+  <component name="RunManager">
     <configuration name="app" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="ServerSideWeb" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -72,7 +67,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="app" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="ServerSideWeb" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -85,7 +80,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/app.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -96,7 +91,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.main" />
+        <item itemvalue="Python.app" />
         <item itemvalue="Python.app" />
       </list>
     </recent_temporary>
@@ -114,7 +109,7 @@
       <workItem from="1653999719771" duration="21000" />
       <workItem from="1654005162312" duration="118000" />
       <workItem from="1654333203378" duration="219000" />
-      <workItem from="1655809140966" duration="12630000" />
+      <workItem from="1655809140966" duration="16509000" />
     </task>
     <task id="LOCAL-00001" summary="creating server side">
       <created>1653992471904</created>
@@ -130,7 +125,14 @@
       <option name="project" value="LOCAL" />
       <updated>1654004396768</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="finishing programing all">
+      <created>1655907669051</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1655907669051</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -150,10 +152,11 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="creating server side" />
     <MESSAGE value="adding pictures and most of seconed assigment" />
-    <option name="LAST_COMMIT_MESSAGE" value="adding pictures and most of seconed assigment" />
+    <MESSAGE value="finishing programing all" />
+    <option name="LAST_COMMIT_MESSAGE" value="finishing programing all" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/ServerSideWeb$app.coverage" NAME="app Coverage Results" MODIFIED="1655906706158" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/Downloads/WEB_live_lectures_2022_B-c64fc47d5eaa4b8c6f1bdd0430bf49895e454231" />
-    <SUITE FILE_PATH="coverage/ServerSideWeb$main.coverage" NAME="main Coverage Results" MODIFIED="1655907428702" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/ServerSideWeb$main.coverage" NAME="app Coverage Results" MODIFIED="1655918926949" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

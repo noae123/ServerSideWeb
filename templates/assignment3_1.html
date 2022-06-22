@@ -14,7 +14,7 @@
             <h2>Here you can see all the inner owl cards you have freed</h2>
             {% if cards|length > 1 %}
                 {% for owl in cards %}
-                    <img class="card" src={{owl}}>
+                    {% include 'components/card.html' %}
                 {% endfor %}
             {% else %}
                 <br>

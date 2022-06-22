@@ -145,12 +145,22 @@ h3{
 
 .card{
     display: inline-block;
-    margin: 4vh 2vw 0 0;
+    margin: 8vh 2vw 0 0;
     width: 220px;
     height: calc(1.4 * 220px);
     border-radius: 15px;
     box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
     outline: 2px solid rgba(255, 255, 255, 0.7);
+}
+
+.card img{
+    width: 220px;
+    height: calc(1.4 * 220px);
+    border-radius: 15px;
+}
+
+.card h2{
+    text-align: center;
 }
 
 .glass{

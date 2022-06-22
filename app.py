@@ -37,8 +37,10 @@ def profile():
         first_name = session['fname']
         last_name = session['lname']
 
-    return render_template('assignment3_1.html', first_name=first_name, last_name=last_name, owl_name='owl1',
-                           cards=['../static/img/empress.png', '../static/img/justice.png', '../static/img/moon.png'])
+    return render_template('assignment3_1.html', first_name=first_name, last_name=last_name,
+                           cards=[{'src':'../static/img/empress.png', 'name':'the empress'},
+                                  {'src':'../static/img/justice.png', 'name':'justice'},
+                                  {'src': '../static/img/moon.png', 'name': 'the moon'}])
 
 @app.route('/assignment3_2', methods=["POST", "GET"])
 def Login():
