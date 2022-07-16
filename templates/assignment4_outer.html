@@ -1,0 +1,63 @@
+{% extends 'components/basic_web.html' %}
+
+{% block title %}
+    <title>Outer</title>
+{% endblock %}
+
+{% block body_tag %}
+<body class="grid-container form-grid">
+{% endblock %}
+
+{% block main_part %}
+{% if user_id %}
+    <script>
+        let user_id =  {{user_id}};
+        fetch_ajax(user_id);
+    </script>
+{% endif %}
+
+<article class="contactUsPhrase">
+    {{super()}}
+</article>
+    <article class="formArticle">
+
+        <!-- fetch function - js -->
+        <br>
+        <h1>fetch function - js</h1><br>
+        <p>insert the id number of the user you wish to find</p><br>
+        <form action="/assignment4/outer_source" method="POST" class="outer-form-grid">
+            <input type="text" name="function" value="frontend" hidden>
+            <div id="input_id_d">
+                <label for="uid_d">id</label><br>
+                <input type="number" id="uid_d" name="uid_d" class="formInput" required>
+            </div><br>
+            <input id="input1_d"  type="submit" value="Find" class="submitButton">
+        </form>
+        <br>
+
+        <!-- import python -->
+        <br>
+        <h1>import requests - python</h1><br>
+       <p>insert the id number of the user you wish to find</p><br>
+        <form action="/assignment4/outer_source" method="POST" class="outer-form-grid">
+            <input type="text" name="function" value="backend" hidden>
+            <div id="input1">
+                <label for="input_id">id</label><br>
+                <input type="number" id="input_id" name="input_id" class="formInput" required>
+            </div><br>
+            <input id="input2"  type="submit" value="Find" class="submitButton">
+        </form>
+        <br>
+
+        {% if json_dict %}
+            <div class="glass card glassy2">
+                <h1>id: {{ json_dict['data']['id'] }}</h1>
+                <h1>name: {{ json_dict['data']['first_name'][0]|upper}}{{ json_dict['data']['first_name'][1:]|lower}} {{ json_dict['data']['last_name'][0]|upper}}{{ json_dict['data']['last_name'][1:]|lower}}</h1>
+                <h1>email: {{ json_dict['data']['email'] }}</h1>
+                <br>
+                <img src="{{json_dict['data']['avatar']}}">
+            </div>
+        {% endif %}
+
+    </article>
+{% endblock %}

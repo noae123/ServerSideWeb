@@ -1,0 +1,101 @@
+{% extends 'components/basic_web.html' %}
+
+{% block title %}
+    <title>Users</title>
+{% endblock %}
+
+{% block body_tag %}
+<body class="grid-container form-grid">
+{% endblock %}
+
+{% block main_part %}
+
+{% if message %}
+<script>alert("{{ message }}")</script>
+{% endif %}
+
+<article class="contactUsPhrase">
+    {{super()}}
+</article>
+    <article class="formArticle">
+        <!-- insertion form -->
+
+        <h1>Create new user</h1><br>
+        <form action="/assignment4" method="POST" class="create-form-grid">
+            <input type="text" name="function" value="create" hidden>
+            <div id="input1">
+                <label for="fname">First name</label><br>
+                <input type="text" id="fname" name="fname" class="formInput" required>
+            </div>
+            <div id="input2">
+                <label for="lname">Last name</label><br>
+                <input type="text" id="lname" name="lname" class="formInput" required>
+            </div>
+            <div id="input3">
+                <label for="email" >Email Address</label><br>
+                <input required type="email" id="email" name="email" class="formInput" required>
+            </div>
+            <div id="input4">
+                <label for="pass" >Password</label><br>
+                <input required type="password" id="pass" name="password" class="formInput" required>
+            </div>
+            <input id="input5" type="submit" value="Create" class="submitButton">
+        </form>
+        <br>
+
+        <!-- update form -->
+        <br><br>
+        <h1>Update a user</h1><br>
+        <p>insert the id number of the user you wish to update ,fill the form, only filled inputs will be updated</p><br>
+        <form action="/assignment4" method="POST" class="update-form-grid">
+            <input type="text" name="function" value="update" hidden>
+            <div id="input_id">
+                <label for="uid">id</label><br>
+                <input type="number" id="uid" name="uid" class="formInput" required>
+            </div>
+            <div id="input1_u">
+                <label for="fname_u">First name</label><br>
+                <input type="text" id="fname_u" name="fname_u" class="formInput" >
+            </div>
+            <div id="input2_u">
+                <label for="lname_u">Last name</label><br>
+                <input type="text" id="lname_u" name="lname_u" class="formInput" >
+            </div>
+            <div id="input3_u">
+                <label for="email_u" >Email Address</label><br>
+                <input  type="email" id="email_u" name="email_u" class="formInput">
+            </div>
+            <div id="input4_u">
+                <label for="pass_u" >Password</label><br>
+                <input type="password" id="pass_u" name="password_u" class="formInput">
+            </div><br>
+            <input id="input5_u" type="submit" value="Update" class="submitButton">
+        </form>
+        <br>
+
+        <!-- deletion form -->
+        <br>
+        <h1>Delete a user</h1><br>
+        <p>insert the id number of the user you wish to delete</p><br>
+        <form action="/assignment4" method="POST" class="delete-form-grid">
+            <input type="text" name="function" value="delete" hidden>
+            <div id="input_id_d">
+                <label for="uid_d">id</label><br>
+                <input type="number" id="uid_d" name="uid_d" class="formInput" required>
+            </div><br>
+            <input id="input1_d"  type="submit" value="Delete" class="submitButton">
+        </form>
+        <br>
+
+        <!-- list of users -->
+        <br><h1>List of users</h1><br>
+        {% for cultist in range(users|length) %}
+        <div class="glass card glassy">
+            <h1>id: {{ users[cultist]['id'] }}</h1>
+            <h1>name: {{ users[cultist]['first_name'][0]|upper}}{{ users[cultist]['first_name'][1:]|lower}} {{ users[cultist]['last_name'][0]|upper}}{{ users[cultist]['last_name'][1:]|lower}}</h1>
+            <h1>email: {{ users[cultist]['email'] }}</h1>
+            <h1>password: {{ users[cultist]['password'] }}</h1>
+        </div>
+        {% endfor %}
+    </article>
+{% endblock %}

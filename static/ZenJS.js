@@ -106,3 +106,32 @@ function openMenu() {
         }
     }
 }
+
+function fetch_ajax(user_id){
+    url= 'https://reqres.in/api/users/' + user_id
+    fetch(url)
+    .then(response => response.json())
+    .then(responseJSON => {
+        json_dict = responseJSON.data;
+
+        const el = document.createElement('div');
+        el.classList.add('glass', 'card', 'glassy2');
+        document.getElementsByClassName('formArticle')[0].appendChild(el);
+
+        const h_id = document.createElement('h1');
+        h_id.textContent = "id: " + json_dict['id'];
+        const name = document.createElement('h1');
+        name.textContent = "name: " + json_dict['first_name'] + ' ' + json_dict['last_name'];
+        const email = document.createElement('h1');
+        email.textContent = "email: " + json_dict['email'];
+        const image = document.createElement('img');
+        image.src = json_dict['avatar'];
+
+        el.appendChild(h_id);
+        el.appendChild(name);
+        el.appendChild(email);
+        el.appendChild(document.createElement('br'));
+        el.appendChild(image);
+    })
+    .catch(err => console.log(err));
+}

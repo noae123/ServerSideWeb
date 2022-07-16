@@ -136,11 +136,15 @@ h2{
     cursor: default;
 }
 
-h3{
+h3,p{
     margin: 2vh 0 0 0 ;
     font-family: var(--font2);
     font-size: 20px;
     cursor: default;
+}
+
+p{
+    margin-right: 12.7vw;
 }
 
 .card{
@@ -175,6 +179,20 @@ h3{
     border-radius: 15px;
     margin-bottom: 2em;
     margin-top: 0;
+}
+
+.glassy{
+    height: 7.5em;
+}
+
+.glassy2{
+    height: 21em;
+}
+
+.glassy2 img{
+    width: 220px;
+    height: 220px;
+    border-radius: 15px;
 }
 
 .glass h1{
@@ -317,22 +335,22 @@ main{
     text-decoration: underline;
 }
 
-#input1{
+#input1,#input_id,#input_id_d{
     grid-area: input1;
 }
-#input2{
+#input2,#input1_u,#input1_d{
     grid-area: input2;
 }
-#input3{
+#input3,#input2_u{
     grid-area: input3;
 }
-#input4{
+#input4,#input3_u{
     grid-area: input4;
 }
-#input5{
+#input5,#input4_u{
     grid-area: input5;
 }
-#input6{
+#input6,#input5_u{
     grid-area: input6;
 }
 #input7{
@@ -354,6 +372,51 @@ main{
     'input6 input6'
     'input7 input7'
     'input8 input8';
+}
+
+.create-form-grid{
+    display: grid;
+    margin-right: var(--padding_aside);
+    grid-template-columns: 47.5% auto;
+    row-gap: 2vh;
+    column-gap: 5vw;
+    grid-template-areas: 'input1 input2'
+    'input3 input3'
+    'input4 input4'
+    'input5 input5';
+}
+
+.outer-form-grid{
+    display: grid;
+    margin-right: var(--padding_aside);
+    grid-template-columns: 47.5% auto;
+    row-gap: 2vh;
+    column-gap: 5vw;
+    grid-template-areas: 'input1 input1'
+    'input2 input2';
+}
+
+.update-form-grid{
+    display: grid;
+    margin-right: var(--padding_aside);
+    grid-template-columns: 47.5% auto;
+    row-gap: 2vh;
+    column-gap: 5vw;
+    grid-template-areas: 'input1 input1'
+    'input2 input3'
+    'input4 input4'
+    'input5 input5'
+    'input6 input6';
+}
+
+.delete-form-grid{
+    display: grid;
+    margin-right: var(--padding_aside);
+    grid-template-columns: 47.5% auto;
+    row-gap: 2vh;
+    column-gap: 5vw;
+    grid-template-areas: 'input1 input1'
+    'input2 input2';
 }
 
 .navL:hover{
@@ -520,6 +583,31 @@ input[type="search"] {
         'input8';
     }
 
+    .create-form-grid {
+        display: grid;
+        margin-right: var(--padding_aside);
+        grid-template-columns: 100%;
+        row-gap: 3vh;
+        grid-template-areas: 'input1'
+        'input2'
+        'input3'
+        'input4'
+        'input5';
+    }
+
+    .update-form-grid {
+        display: grid;
+        margin-right: var(--padding_aside);
+        grid-template-columns: 100%;
+        row-gap: 3vh;
+        grid-template-areas: 'input1'
+        'input2'
+        'input3'
+        'input4'
+        'input5'
+        'input6';
+    }
+
     .submitButton {
         font-size: 16px;
         height: 10vh;
@@ -529,6 +617,7 @@ input[type="search"] {
     main{
         text-align: center;
     }
+
 }
 
 input:focus,

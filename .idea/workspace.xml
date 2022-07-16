@@ -1,12 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4634c323-a4b8-4653-bbae-63cf1ef3b086" name="Changes" comment="finishing programing all">
+    <list default="true" id="4634c323-a4b8-4653-bbae-63cf1ef3b086" name="Changes" comment="finishedddd">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ex4_users.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/assignment_4/assignment_4.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/assignment_4/templates/assigment4.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/assignment4_outer.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/שב 4.docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/ZenJS.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/ZenJS.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/static/styleZen.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/styleZen.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/assignment3_1.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/assignment3_1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/שב 3.docx" beforeDir="false" afterPath="$PROJECT_DIR$/שב 3.docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/components/basic_web.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/components/basic_web.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/components/nav_head.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/components/nav_head.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/contact.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,7 +26,19 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
+    </option>
+  </component>
+  <component name="FlaskConsoleOptions" custom-start-script="import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\nApp: %s [%s]\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))">
+    <envs>
+      <env key="FLASK_APP" value="app" />
+    </envs>
+    <option name="myCustomStartScript" value="import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\nApp: %s [%s]\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))" />
+    <option name="myEnvs">
+      <map>
+        <entry key="FLASK_APP" value="app" />
+      </map>
     </option>
   </component>
   <component name="Git.Settings">
@@ -27,6 +48,7 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="29vSceAQZeCYRAW1i3VMv87I4eY" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -34,17 +56,31 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "DefaultHtmlFileTemplate": "HTML File",
-    "WebServerToolWindowFactoryState": "false"
+    "WebServerToolWindowFactoryState": "false",
+    "database.data.extractors.current.export.id": "SQL Inserts",
+    "last_opened_file_path": "/Users/noaelharar/WebstormProjects/ServerSideWeb",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
+    ]
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/pages/assignment_4/static" />
+      <recent name="$PROJECT_DIR$/pages/assignment_4/templates/components" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/static/img" />
-      <recent name="$PROJECT_DIR$/templates/components" />
       <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/pages" />
+      <recent name="$PROJECT_DIR$/assignment_4" />
+      <recent name="$PROJECT_DIR$/assignment_4/pages" />
+      <recent name="$PROJECT_DIR$/pages/assignment_4" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Flask server.Flask (app.py)">
     <configuration name="app" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="ServerSideWeb" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -59,6 +95,33 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$USER_HOME$/Downloads/WEB_live_lectures_2022_B-c64fc47d5eaa4b8c6f1bdd0430bf49895e454231/app.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="app" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="ServerSideWeb" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="DB_HOST" value="localhost" />
+        <env name="DB_NAME" value="ex4" />
+        <env name="DB_USER" value="root" />
+        <env name="DEBUG" value="TRUE" />
+        <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="SECRET_KEY" value="123" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/app.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -89,8 +152,59 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="assignment_4" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="ServerSideWeb" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/pages/assignment_4" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pages/assignment_4/assignment_4.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Flask (app.py)" type="Python.FlaskServer" nameIsGenerated="true">
+      <option name="flaskDebug" value="true" />
+      <module name="ServerSideWeb" />
+      <option name="target" value="$PROJECT_DIR$/app.py" />
+      <option name="targetType" value="PATH" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="DB_HOST" value="localhost" />
+        <env name="DB_NAME" value="ex4" />
+        <env name="DB_USER" value="root" />
+        <env name="DEBUG" value="TRUE" />
+      </envs>
+      <option name="SDK_HOME" value="/usr/local/bin/python3.8" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Flask server.Flask (app.py)" />
+      <item itemvalue="Python.app" />
+      <item itemvalue="Python.assignment_4" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.app" />
+        <item itemvalue="Python.assignment_4" />
         <item itemvalue="Python.app" />
         <item itemvalue="Python.app" />
       </list>
@@ -109,7 +223,12 @@
       <workItem from="1653999719771" duration="21000" />
       <workItem from="1654005162312" duration="118000" />
       <workItem from="1654333203378" duration="219000" />
-      <workItem from="1655809140966" duration="16509000" />
+      <workItem from="1655809140966" duration="16699000" />
+      <workItem from="1656333375417" duration="593000" />
+      <workItem from="1657088674494" duration="25449000" />
+      <workItem from="1657440106980" duration="6048000" />
+      <workItem from="1657956411166" duration="1045000" />
+      <workItem from="1657957850895" duration="3545000" />
     </task>
     <task id="LOCAL-00001" summary="creating server side">
       <created>1653992471904</created>
@@ -132,7 +251,14 @@
       <option name="project" value="LOCAL" />
       <updated>1655907669051</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="finishedddd">
+      <created>1655921401350</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1655921401350</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -153,10 +279,14 @@
     <MESSAGE value="creating server side" />
     <MESSAGE value="adding pictures and most of seconed assigment" />
     <MESSAGE value="finishing programing all" />
-    <option name="LAST_COMMIT_MESSAGE" value="finishing programing all" />
+    <MESSAGE value="finishedddd" />
+    <option name="LAST_COMMIT_MESSAGE" value="finishedddd" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/ServerSideWeb$app.coverage" NAME="app Coverage Results" MODIFIED="1655906706158" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/Downloads/WEB_live_lectures_2022_B-c64fc47d5eaa4b8c6f1bdd0430bf49895e454231" />
+    <SUITE FILE_PATH="coverage/ServerSideWeb$Flask__app_py_.coverage" NAME="Flask (app.py) Coverage Results" MODIFIED="1657959712420" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/ServerSideWeb$app.coverage" NAME="app Coverage Results" MODIFIED="1657959739117" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/ServerSideWeb$assignment_4.coverage" NAME="assignment_4 Coverage Results" MODIFIED="1657109937495" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pages/assignment_4" />
+    <SUITE FILE_PATH="coverage/ServerSideWeb$app__1_.coverage" NAME="app (1) Coverage Results" MODIFIED="1657448003098" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/ServerSideWeb$main.coverage" NAME="app Coverage Results" MODIFIED="1655918926949" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
